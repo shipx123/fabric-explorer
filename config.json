@@ -1,7 +1,7 @@
 {
    "host":"localhost",
    "port":"4002",
-   "channelsList": ["itemchannel"],
+   "channelsList": ["mychannel"],
    "GOPATH":"../artifacts",
    "keyValueStore":"/tmp/fabric-client-kvs",
    "eventWaitTime":"30000",
@@ -14,7 +14,7 @@
    ],
    "mysql":{
       "host":"127.0.0.1",
-      "database":"itemexplorer",
+      "database":"fabric-explorer",
       "username":"root",
       "passwd":"123456"
    }
