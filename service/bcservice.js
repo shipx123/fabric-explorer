@@ -87,16 +87,15 @@ function getAllChannels(){
 function getallPeers () {
 
     var peerArray=[]
-
     for (let key in ORGS) {
         if (key.indexOf('org') === 0) {
-
-
-
-            let peerName = ORGS[key].peer1.requests;
-            peerArray.push(peerName)
-
-
+            let orgproperty = ORGS[key]
+            for ( let orgkey in orgproperty){
+                if(  orgkey.indexOf('peer') === 0 ){
+                    let peerName = ORGS[key].orgkey;
+                    peerArray.push(peerName)
+                }
+            }
         }
     }
     return peerArray
